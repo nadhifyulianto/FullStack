@@ -14,3 +14,19 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+import { after } from "node:test";
+
+const friedRice: number = 18000;
+const drinks: number = 5000;
+const discount: number = 10000;
+const osis: boolean = true;
+
+const totalprice: number = friedRice*3+drinks*2;
+const afterdiscount = totalprice-discount;
+
+console.log("fried rice 3= "+friedRice*3,"+","drinks 2= ",drinks*2);
+console.log("total price "+totalprice);
+console.log("raka osis "+osis);
+console.log("total price after discount osis 10000 = "+afterdiscount);
+

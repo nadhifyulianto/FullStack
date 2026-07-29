@@ -11,3 +11,51 @@
  * 
  * display the registration data using console.log.
  */
+
+type learning ={
+    idStudent: number;
+    name:string;
+    grade:string;
+    iDcourse:number;
+    courseTitle:string;
+    instructorName:string;
+    totalLearning:number;
+    date:Date;
+    registrasi:boolean;
+};
+
+const product1: learning={
+    idStudent:111,
+    name:"bayu",
+    grade:"beginner",
+    iDcourse:100,
+    courseTitle:"math",
+    instructorName:"doni",
+    totalLearning:10,
+    date:new Date("2026-07-27"),
+    registrasi:true
+};
+
+const product2: learning={
+    idStudent:112,
+    name:"asep",
+    grade:"senior",
+    iDcourse:101,
+    courseTitle:"english",
+    instructorName:"joni",
+    totalLearning:9,
+    date:new Date("2026-07-27"),
+    registrasi:true
+};
+
+const product3: learning={
+    idStudent:113,
+    name:"alix",
+    grade:"amatir",
+    iDcourse:102,
+    courseTitle:"indonesia",
+    instructorName:"key",
+    totalLearning:8,
+    date:new Date("2026-07-27"),
+    registrasi:true
+};

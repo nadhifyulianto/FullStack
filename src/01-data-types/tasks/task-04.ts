@@ -10,3 +10,41 @@
  * 
  * display the book data using console.log.
  */
+
+import { title } from "node:process";
+
+type library ={
+    numberISBN: number;
+    title:string;
+    author:string;
+    pages:number;
+    category:string;
+    avaible:boolean;
+};
+
+const libary1: library={
+    numberISBN: 1,
+    title: "Moon",
+    author: "asep",
+    pages: 10,
+    category: "Novel",
+    avaible:true,
+};
+
+const libary2: library={
+    numberISBN: 2,
+    title: "Sun",
+    author: "Uya",
+    pages: 15,
+    category: "Novel",
+    avaible:false,
+};
+
+const libary3: library={
+    numberISBN: 3,
+    title: "Sky",
+    author: "M",
+    pages: 12,
+    category: "Novel",
+    avaible:true,
+};

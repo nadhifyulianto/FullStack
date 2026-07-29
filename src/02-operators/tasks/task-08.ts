@@ -24,3 +24,19 @@
  * - Final bill
  * - Green Energy Program eligibility
  */
+
+const PreviousMeter = 25640
+const CurrentMeter = 25892
+const ElectricityPriceperkWh = 1650
+const SolarPanelInstalled = true
+const EnergySavingMode = false
+
+const Electricityusage = CurrentMeter-PreviousMeter
+const totalprice = Electricityusage*ElectricityPriceperkWh
+
+const fristprice = SolarPanelInstalled == true ? totalprice * (1 - 0.12) : totalprice;
+
+const discountSavingMode = EnergySavingMode == false ? fristprice : fristprice* (1- 0.5);
+
+
+

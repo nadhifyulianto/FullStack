@@ -33,3 +33,50 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+import { compileFunction } from "node:vm";
+
+
+const name ="Alya Putri";
+const gpa = 3.89;
+const income = 4200000;
+const Competition = 4;
+const disciplinaryRecord = false;
+const documents = true;
+
+const scholarshipBugdet = 500000000;
+
+const gpaRequitmen = gpa>= 3.75;
+const incomeRecuitmen = income < 5000000;
+const CompetitionRequitmen = Competition >= 3;
+const disciplinaryRecordRequitmen = disciplinaryRecord == false;
+const documentsRequitmen = documents == true;
+
+const isquaifies = 
+gpaRequitmen &&
+incomeRecuitmen &&
+CompetitionRequitmen &&
+disciplinaryRecordRequitmen &&
+documentsRequitmen;
+
+let scholarshipAmount = isquaifies ? 0 : 12000000;
+
+let afterbudget = scholarshipBugdet - scholarshipAmount;
+
+console.log("============qualified================");
+console.log("Name : "+ name);
+console.log("GPA : "+ gpa);
+console.log("income : "+income);
+console.log("competition : "+Competition);
+console.log("displinary Record : "+disciplinaryRecord);
+console.log("document : "+documents);
+console.log("scholarship Amoun : "+scholarshipAmount);
+console.log("schlarship budget : "+afterbudget);
+console.log("=====================================")
+
+
+
+
+
+
+
