@@ -34,9 +34,17 @@ const EnergySavingMode = false
 const Electricityusage = CurrentMeter-PreviousMeter
 const totalprice = Electricityusage*ElectricityPriceperkWh
 
-const fristprice = SolarPanelInstalled == true ? totalprice * (1 - 0.12) : totalprice;
+const fristprice = SolarPanelInstalled == true ? totalprice * (1 - 0.20) : totalprice;
 
-const discountSavingMode = EnergySavingMode == false ? fristprice : fristprice* (1- 0.5);
+const discountSavingMode = EnergySavingMode == false ? fristprice : fristprice* (1- 0.05);
 
+const greenEnergyProgram =
+  SolarPanelInstalled &&
+  Electricityusage < 300 &&
+  EnergySavingMode;
 
+console.log("Electricity Usage:", Electricityusage, "kWh");
+console.log("Total Bill:", totalprice);
+console.log("Final Bill:", fristprice);
+console.log("Green Energy Program:", greenEnergyProgram);
 

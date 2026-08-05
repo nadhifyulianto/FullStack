@@ -19,4 +19,23 @@
  * 3. Display the appropriate message. if student meets all requirement, 
  * will be display "Congratulations! You are eligible to graduate.", 
  * otherwise display "You are not eligible to graduate."
- */
+ */ 
+
+const name ="Alya Putri";
+const finalScore = 82;
+const attendance = 94;
+const tuitionPaid = true;
+
+const iseligible =
+    finalScore >= 75 &&
+    attendance >= 90 &&
+    tuitionPaid;
+
+if (iseligible) {
+    console.log("Congratulations! You are eligible to graduate.")
+} else {
+    console.log("You are not eligible to graduate.")
+}
+
+console.log(name)
+console.log(iseligible)

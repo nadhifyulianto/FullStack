@@ -27,3 +27,18 @@
  * 2. Implement the airline decision process.
  * 3. Display the correct message.
  */
+
+const name ="Fajar Nugroho"
+const onlineCheck = true
+const cabinClass = "Economy"
+const baggageWeight = 24
+
+if (onlineCheck) {
+    if (baggageWeight > 20) {
+        console.log("Business Class → Extra baggage allowed")
+    } else {
+        console.log("Economy Class → Additional baggage fee required.")
+    } 
+} else {
+    console.log("Please complete online check-in first.")
+}

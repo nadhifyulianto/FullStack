@@ -14,3 +14,14 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+const name = "dimas"
+const score = 78
+let Bonus ;
+
+if (score >= 80 ) {
+     Bonus = "Bonus Approved"
+} else {
+     Bonus = "Bonus not approved"
+};
+
+console.log(Bonus)

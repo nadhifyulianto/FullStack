@@ -20,6 +20,39 @@
  * 1. Total sales revenue
  * 2. Highest transaction
  * 3. Lowest transaction
- * 4. Number of transactions worth Rp300,000 or more
+ * 4. Number of transactions worth Rp300,000 or more 
  * 5. Average transaction value
  */
+
+    const sales = [125000,350000,78000,910000,150000,420000,
+    275000,99000,640000,18000]
+
+    let total = 0
+    let highest = 0
+    let lowest = 0
+    let transaction = 0
+
+    for (let i = 0; i < sales.length; i++) {
+        total += sales[i]; 
+
+    if (sales[i] > highest) {
+    highest = sales[i];
+  }
+
+    if (sales[i] > lowest) {
+    lowest = sales[i];
+  } 
+
+   if (sales[i] >= 300000) {
+    transaction++;
+  }
+}   const average = total / sales.length
+
+console.log("Total sales revenue : "+total)
+console.log("Highest transaction : "+highest)
+console.log("Lowest transaction : "+lowest)
+console.log("Number of transactions worth Rp300,000 or more : "+transaction)
+console.log("Average transaction value : "+average)
+
+
+

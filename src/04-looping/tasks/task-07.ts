@@ -18,3 +18,22 @@ const attendances = [
   { name: "Gita", present: true },
   { name: "Hana", present: false }
 ];
+
+let present = 0 
+let absent = 0
+let absentStudents = []
+
+
+ for (let i = 0; i < attendances.length; i++) {
+    if (attendances[i].present) {
+    present++
+    } else {
+    absent++
+    absentStudents.push(attendances[i].name);
+    }
+ }  const attendancePercentage = (present / attendances.length) * 100
+
+  console.log("Present Students:", present);
+  console.log("Absent Students:", absent);
+  console.log("Absent Student Names:", absentStudents);
+  console.log("Attendance Percentage:", attendancePercentage.toFixed(2) + "%");

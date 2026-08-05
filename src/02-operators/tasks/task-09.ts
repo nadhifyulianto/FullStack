@@ -34,3 +34,35 @@
  * - Free shipping eligibility
 
  */
+
+const Keyboard = 850000
+const quantity1 = 1
+
+const mouse = 275000
+const quantity2 = 2
+
+const monitor = 420000
+const quantity3 = 1
+
+const voucer = 100000
+const member = true
+const tax = 0.11
+
+const totalprice = Keyboard*quantity1+mouse*quantity2+monitor*quantity3
+const discount = member == true ? (totalprice * (1 - 0.10)) - voucer : totalprice - voucer;
+
+const ppn = discount*tax
+
+const freeOngkir = member == true || discount > 1500000 ? "Free Ongkir" : "Nothing";
+const poin = Math.floor(discount / 50000);
+
+console.log("=========Struk============");
+console.log("Product subtotal : "+ totalprice);
+console.log("Membership discount : 10%");
+console.log("Voucher deduction : "+ voucer);
+console.log("Payment before tax : "+discount);
+console.log("VAT : "+tax);
+console.log("Final payment : "+ppn);
+console.log("reward Points : "+poin);
+console.log("Free shipping eligibility : "+freeOngkir);
+console.log("============================================");
